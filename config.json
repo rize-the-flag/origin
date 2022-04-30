@@ -1,0 +1,15 @@
+{
+  "token": "OTM2NjM2MDA1MTM2NjA1MjE0.YfQEQQ.ZHZeVCqso3pHBJa_eRojLD2rc6Q",
+  "clientId": "936636005136605214",
+  "guildId": "705125196511838340",
+  "MarketWatcher": {
+    "locale": "ru",
+    "requestFrequency": 10000
+  },
+  "DiscordClient": {
+    "defaultMsgChannel": "аукцион",
+    "intent": {
+      "FLAGS": "GUILDS"
+    }
+  }
+}

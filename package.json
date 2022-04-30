@@ -1,0 +1,34 @@
+{
+  "dependencies": {
+    "@discordjs/builders": "^0.12.0",
+    "@discordjs/rest": "^0.3.0",
+    "@keyv/sqlite": "^3.5.0",
+    "discord-api-types": "^0.30.0",
+    "discord.js": "^13.6.0",
+    "keyv": "^4.2.2",
+    "node-fetch": "^3.2.3",
+    "sequelize": "^6.17.0",
+    "sqlite3": "^5.0.2"
+  },
+  "name": "bdo-abot",
+  "version": "1.0.0",
+  "description": "simple auction bot for BDO",
+  "main": "./src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --experimental-json-modules  ./dist/src/index.js",
+    "deploy-cmds": "node --experimental-json-modules  ./dist/src/deploy-commands.js"
+  },
+  "keywords": [
+    "BOT",
+    "BDO",
+    "Auction",
+    "BOT"
+  ],
+  "author": "devM",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.12.0"
+  }
+}
