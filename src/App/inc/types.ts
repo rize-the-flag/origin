@@ -10,6 +10,7 @@ export interface IWaitQueueItem {
     id: string;
     enhance: string;
     date?: Date;
+    price?: string;
     name: {
         [key: string]: string;
     },

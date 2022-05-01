@@ -8,7 +8,7 @@ export class MarketListener {
 
     private marketWaitQueue: Array<IWaitQueueItem> = [];
     private userWatchQueue: Array<ISubscribedDiscordUser> = [
-        {
+/*        {
             id: '262865198669365250',
             items: [
                 {
@@ -31,7 +31,7 @@ export class MarketListener {
                     },
                 },
             ]
-        }
+        }*/
     ];
 
     private timerId: NodeJS.Timer;
@@ -103,7 +103,7 @@ export class MarketListener {
         eventEmitter.emit(MARKET_LISTENER_EVENTS.NEW_ITEM_REGISTERED, items);
     }
 
-    removeOld() {
+    cleanup() {
 
     }
 

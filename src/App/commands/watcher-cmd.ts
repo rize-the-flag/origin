@@ -1,6 +1,6 @@
 import {CommandInteraction} from "discord.js";
 import {Command} from "./command.js"
-import {MarketListener} from "../market-watcher/market-watcher.js";
+import {MarketListener} from "../market-listener/market-listener.js";
 
 export class WatcherCmd extends Command {
 
@@ -67,6 +67,16 @@ export class WatcherCmd extends Command {
                 break;
             case 'watch-bs-main':
                 this.bsMainList.forEach(x => watcher.subscribe(interaction.user.id, x, '20'))
+                break;
+            case 'unsubscribe':
+                const item = interaction.options.getString('item');
+                const enhance = interaction.options.getString('enhance');
+                if (!item || !enhance) return
+                watcher.unsubscribe(
+                    interaction.user.id,
+                    item,
+                    enhance
+                )
                 break;
             default:
                 throw new Error('not found');
