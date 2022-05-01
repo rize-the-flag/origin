@@ -1,7 +1,7 @@
 import {Client, CommandInteraction, Intents, MessageEmbed, TextChannel} from "discord.js";
 import {ICommandHandler, ISubscribedDiscordUser, IWaitQueueItem, MARKET_LISTENER_EVENTS} from "./inc/types.js"
 import {Ping} from "./commands/ping-cmd.js";
-import {eventEmitter} from "./eventEmitter.js";
+import {eventEmitter} from "./event-emitter.js";
 import Config from "../../config.json" assert {type: "json"};
 import {WatcherCmd} from "./commands/watcher-cmd.js";
 

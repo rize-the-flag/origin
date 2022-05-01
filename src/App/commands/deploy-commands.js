@@ -3,7 +3,7 @@ exports.__esModule = true;
 var builders_1 = require("@discordjs/builders");
 var rest_1 = require("@discordjs/rest");
 var v9_1 = require("discord-api-types/v9");
-var config_json_1 = require("../config.json");
+var config_json_1 = require("../../../config.json");
 var commands = [
     new builders_1.SlashCommandBuilder().setName('ping').setDescription('Replies with pong!'),
     new builders_1.SlashCommandBuilder().setName('market').setDescription('Replies with server info!')

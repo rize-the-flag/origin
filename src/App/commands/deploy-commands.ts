@@ -1,12 +1,12 @@
 import {SlashCommandBuilder} from '@discordjs/builders';
 import {REST} from '@discordjs/rest';
 import {Routes} from 'discord-api-types/v9';
-import Config from '../config.json' assert {type: "json"};
+import Config from '../../../config.json' assert {type: "json"};
 
 const commands = [
     new SlashCommandBuilder().setName('ping').setDescription('Replies with pong!'),
     new SlashCommandBuilder().setName('market').setDescription('Replies with server info!')
-        .addSubcommand(subcommand => subcommand.setName('subscribe')            .setDescription('add item to queue')
+        .addSubcommand(subcommand => subcommand.setName('subscribe').setDescription('add item to queue')
             .addStringOption(option => option.setName('item').setDescription('item name').setRequired(true))
             .addStringOption(option => option.setName('enhance').setDescription('enhance level').setRequired(true))
         )

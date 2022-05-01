@@ -1,6 +1,6 @@
 import {ISubscribedDiscordUser, IWaitQueueItem, MARKET_LISTENER_EVENTS, Nullable} from "../inc/types.js";
 import {getItemByName, getWorldMarketWaitList, parseResponseData} from "../api.js";
-import {eventEmitter} from "../eventEmitter.js";
+import {eventEmitter} from "../event-emitter.js";
 import {assertIsDatabaseItem} from "../inc/guards.js";
 
 
